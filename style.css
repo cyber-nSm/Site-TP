@@ -1,0 +1,347 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Section Accueil */
+.hero {
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Section À propos */
+#about {
+    padding: 3rem 2rem;
+    background-color: ivory;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Portfolio */
+#portfolio {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Section Contact */
+#contact {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#compétences{
+    text-align: center;
+    font-size: x-large;
+
+}
+
+#Langages{
+    text-align: center;
+    font-size: large;
+}
+
+
+#Tom{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Style pour l'image de la section accueil */
+#image444 {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+/* Style général pour la section */
+#about {
+    font-family: 'Roboto', sans-serif; /* Police moderne */
+    background-color: #f9f9f9;
+}
+
+
+/* Sous-titres */
+.section-title {
+    font-size: 1.8em;
+    color: #555;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Texte d'introduction */
+.intro {
+    font-size: 1.2em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Listes */
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Mettez les mots-clés en valeur */
+ul li strong {
+    color: #ff6f61; /* Accentuez avec une couleur contrastée */
+}
+
+/* Animation subtile pour les titres */
+h2, .section-title {
+    transition: color 0.3s ease;
+}
+
+h2:hover, .section-title:hover {
+    color: #ff6f61;
+}
+
+/* Centrer tout et rendre fluide */
+#about {
+    text-align: left;
+}
+/* Section Portfolio */
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#portfolio h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff6f61;
+    margin: 10px auto;
+}
+
+/* Grille de la galerie */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Carte de projet */
+.portfolio-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images des projets */
+.portfolio-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Titres et descriptions */
+.portfolio-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0 15px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #portfolio h2 {
+        font-size: 2em;
+    }
+    .portfolio-item img {
+        height: 120px;
+    }
+}
